@@ -57,8 +57,8 @@ async def start(update: Update, context):
 
 async def attack(update: Update, context):
     user_id = update.effective_user.id
-    
-        if len(context.args) < 4:
+   
+    if len(context.args) < 4:
            await update.message.reply_text(
             "❌ *Usage:*\n"
             "`/attack <IP> <PORT> <DURATION> <METHOD>`\n\n"
