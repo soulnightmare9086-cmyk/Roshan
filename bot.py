@@ -64,7 +64,7 @@ async def attack(update: Update, context):
             "`/attack <IP> <PORT> <DURATION> <METHOD>`\n\n"
             "📝 *Example:*\n"
             "`/attack 1.2.3.4 80 60 udp`\n\n"
-            "*Methods:* udp, tcp, udp\\_game, http, slowloris",
+            "*Methods:* udp, tcp, udp_game, http, slowloris",
             parse_mode="Markdown"
         )
         return
