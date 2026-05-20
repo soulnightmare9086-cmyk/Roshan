@@ -83,10 +83,10 @@ async def attack(update: Update, context):
     "slowloris": "SLOWLORIS"
 }
     if method not in METHODS:
-    await update.message.reply_text(
+     await update.message.reply_text(
         f"❌ Invalid method. Available: {', '.join(METHODS.keys())}"
      )
-    return
+     return
     
     # Launch attack
     msg = await update.message.reply_text(f"🚀 Launching {method.upper()} attack on `{target_ip}:{target_port}` for {duration}s...", parse_mode="Markdown")
